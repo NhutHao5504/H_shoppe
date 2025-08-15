@@ -215,7 +215,7 @@
     border: 1px solid #D3D3D3;
     border-radius: 2px;;
     display: none;
-    animation: fadeIn ease-in .4s;
+    animation: fadeIn ease-in .3s;
 }
 
 .header__navbar-language::before {
@@ -247,4 +247,130 @@
 .header__navbar-VN:hover a,
 .header__navbar-EN:hover a{
     color: #ee4d2d;
+}
+
+/* Auth Modal */
+.auth-form {
+    width: 500px;
+    overflow: hidden;
+    
+}
+
+.auth-form__container {
+    padding: 0 32px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
+}
+
+.auth-form__heading {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #222;
+}
+
+.auth-form__switch-btn {
+    font-size: 1.6rem;
+    color: #ee4d2d;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+
+.auth-form__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px 0 12px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border: 1px solid #cdcdcd;
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #888;
+}
+
+.auth-form__aside {
+    margin-top: 18px;
+}
+
+.auth-form__policy-text {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.auth-form__aside--login {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__forgot-password,
+.auth-form__policy-link {
+    text-decoration: none;
+    color: #ee4d2d;
+}
+
+.auth-form__help {
+    text-decoration: none;
+    color: #847f7f;
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+.auth-form__forgot-password {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.auth-form__separate {
+    display: block;
+    border-left: 1px solid #dcd7d7;
+    margin: 0 16px;
+}
+
+.auth-form__controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.auth-form__controls-back {
+    margin-right: 10px;
+}
+
+.auth-form__socials {
+    background-color: #f2eaea;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.social__icon {
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+.btn--with-icon {
+    padding-right: 10px;
+    font-weight: 500;
+    flex: 1;
+}
+
+.icon__fb {
+    background-color: rgb(14, 14, 192);
+    color: #fff;
+    margin-right: 7px;
+}
+
+.icon__gg {
+    background-color: white;
+    margin-left: 7px;
 }
