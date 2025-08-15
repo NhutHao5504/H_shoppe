@@ -24,6 +24,14 @@
     display: block;
 }
 
+.header__navbar-item--notify:hover .header__notify {
+    display: block;
+}
+
+.header__navbar-language--options:hover .header__navbar-language {
+    display: block;
+}
+
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
@@ -116,3 +124,127 @@
     height: 16px;
 }
 
+/* HEADER NOTIFY*/
+.header__notify {
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 400px;
+    background-color: var(--white-color);
+    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in .4s;
+}
+
+.header__notify::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    display: block;
+    border-width: 21px 38px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    right: 1px;
+}
+
+.header__notify-img {
+    display: flex;
+    justify-content: center;
+}
+
+.header__notify-img-login {
+    height: 103px;
+    margin-top: 95px;
+}
+
+.header__notify-desc {
+    color: #222;
+    width: 100%;
+    margin-top: 26px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 1.4rem;
+}
+
+.header__notify-btn{
+    display: flex;
+    text-decoration: none;
+    background-color: #e8e8e8;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header__notify-btn-signup,
+.header__notify-btn-signin {
+    flex: 1;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.header__notify-btn-signup a,
+.header__notify-btn-signin a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #222;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.header__notify-btn-signup:hover,
+.header__notify-btn-signin:hover {
+    background-color: #d9d6d6;
+}
+
+.header__notify-btn-signup:hover a,
+.header__notify-btn-signin:hover a {
+    color: #ee4d2d;
+}
+
+/* NAVBAR LANGUAGE */
+.header__navbar-language {
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 196px;
+    background-color: var(--white-color);
+    border: 1px solid #D3D3D3;
+    border-radius: 2px;;
+    display: none;
+    animation: fadeIn ease-in .4s;
+}
+
+.header__navbar-language::before {
+    content: "";
+    position: absolute;
+    top: -32px;
+    display: block;
+    border-width: 21px 38px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    right: 1px;
+}
+
+.header__navbar-language a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.header__navbar-language--option {
+    margin-left: 10px;
+}
+
+.header__navbar-VN,
+.header__navbar-EN {
+    padding: 10px;
+}
+
+.header__navbar-VN:hover a,
+.header__navbar-EN:hover a{
+    color: #ee4d2d;
+}
